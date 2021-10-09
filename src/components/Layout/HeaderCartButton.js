@@ -7,11 +7,11 @@ import classes from './HeaderCartButton.module.css';
 const HeaderCartButton = (props) => {
   const cartCtx = useContext(CartContext);
 
-  const sumNumberOfAllItemsPerItemType = (curNumber, item) =>
-    curNumber + item.amont;
+  const sumUpNumberOfAllItemsPerItemType = (curNumber, item) =>
+    curNumber + item.amount;
 
   const numberOfCartItems = cartCtx.items.reduce(
-    sumNumberOfAllItemsPerItemType,
+    sumUpNumberOfAllItemsPerItemType,
     0
   );
 
