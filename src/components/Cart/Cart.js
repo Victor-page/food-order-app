@@ -5,7 +5,6 @@ import CartItem from './CartItem';
 import Modal from '../UI/Modal';
 import classes from './Cart.module.css';
 import Checkout from './Checkout';
-import { isCompositeComponentWithType } from 'react-dom/test-utils';
 
 const Cart = (props) => {
   const [isCheckout, setIsCheckout] = useState(false);
