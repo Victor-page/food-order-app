@@ -16,19 +16,19 @@ export const requiredRule = (inputName) =>
   createValidationRule(
     'required',
     `${inputName} required`,
-    (inputValue, formObj) => inputValue.length !== 0
+    (inputValue) => inputValue.length !== 0
   );
 
 export const minLengthRule = (inputName, minCharacters) =>
   createValidationRule(
     'minLength',
     `${inputName} should contain atleast ${minCharacters} characters`,
-    (inputValue, formObj) => inputValue.length >= minCharacters
+    (inputValue) => inputValue.length >= minCharacters
   );
 
 export const maxLengthRule = (inputName, maxCharacters) =>
   createValidationRule(
     'minLength',
     `${inputName} cannot contain more than ${maxCharacters} characters`,
-    (inputValue, formObj) => inputValue.length <= maxCharacters
+    (inputValue) => inputValue.length <= maxCharacters
   );

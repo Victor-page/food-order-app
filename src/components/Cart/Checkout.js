@@ -8,7 +8,8 @@ const Checkout = (props) => {
 
   const confirmHandler = (event) => {
     event.preventDefault();
-    console.log(getInputValues());
+    const inputValues = getInputValues();
+    props.onConfirm(inputValues);
   };
 
   return (

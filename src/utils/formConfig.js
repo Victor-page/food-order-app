@@ -42,41 +42,41 @@ export const form = {
   name: {
     ...createFormFieldConfig('Full Name', 'name', 'text'),
     validationRules: [
-      requiredRule('name'),
-      minLengthRule('name', 3),
-      maxLengthRule('name', 25),
+      requiredRule('Name'),
+      minLengthRule('Name', 3),
+      maxLengthRule('Name', 25),
     ],
   },
   email: {
     ...createFormFieldConfig('Email', 'email', 'email'),
     validationRules: [
-      requiredRule('email'),
-      minLengthRule('email', 10),
-      maxLengthRule('email', 25),
+      requiredRule('Email'),
+      minLengthRule('Email', 10),
+      maxLengthRule('Email', 25),
     ],
   },
   street: {
     ...createFormFieldConfig('Street', 'street', 'text'),
     validationRules: [
-      requiredRule('street'),
-      minLengthRule('street', 5),
-      maxLengthRule('street', 50),
+      requiredRule('Street'),
+      minLengthRule('Street', 5),
+      maxLengthRule('Street', 50),
     ],
   },
-  postal: {
-    ...createFormFieldConfig('Postal Code', 'postal', 'text'),
+  postalCode: {
+    ...createFormFieldConfig('Postal Code', 'postalCode', 'text'),
     validationRules: [
-      requiredRule('postal'),
-      minLengthRule('postal', 5),
-      maxLengthRule('postal', 5),
+      requiredRule('Postal Code'),
+      minLengthRule('Postal Code', 5),
+      maxLengthRule('Postal Code', 5),
     ],
   },
   city: {
     ...createFormFieldConfig('City', 'city', 'text'),
     validationRules: [
-      requiredRule('city'),
-      minLengthRule('city', 2),
-      maxLengthRule('city', 50),
+      requiredRule('City'),
+      minLengthRule('City', 2),
+      maxLengthRule('City', 50),
     ],
   },
 };
